@@ -418,6 +418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOver: 0
+  dayLight: {fileID: 705507994}
 --- !u!4 &157344687
 Transform:
   m_ObjectHideFlags: 0
@@ -701,100 +702,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &429520419
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4636604106043231557, guid: 71eeb09645c4376448232cbfc42d3c44,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.828107
-      objectReference: {fileID: 0}
-    - target: {fileID: 4636604106043231557, guid: 71eeb09645c4376448232cbfc42d3c44,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5735755
-      objectReference: {fileID: 0}
-    - target: {fileID: 4636604106043231557, guid: 71eeb09645c4376448232cbfc42d3c44,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.65074015
-      objectReference: {fileID: 0}
-    - target: {fileID: 4636604106043231557, guid: 71eeb09645c4376448232cbfc42d3c44,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4636604106043231557, guid: 71eeb09645c4376448232cbfc42d3c44,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4636604106043231557, guid: 71eeb09645c4376448232cbfc42d3c44,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4636604106043231557, guid: 71eeb09645c4376448232cbfc42d3c44,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4636604106043231557, guid: 71eeb09645c4376448232cbfc42d3c44,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4636604106043231557, guid: 71eeb09645c4376448232cbfc42d3c44,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 4636604106043231557, guid: 71eeb09645c4376448232cbfc42d3c44,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4636604106043231557, guid: 71eeb09645c4376448232cbfc42d3c44,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4636604106043231558, guid: 71eeb09645c4376448232cbfc42d3c44,
-        type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4636604106043231558, guid: 71eeb09645c4376448232cbfc42d3c44,
-        type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.06839624
-      objectReference: {fileID: 0}
-    - target: {fileID: 4636604106043231558, guid: 71eeb09645c4376448232cbfc42d3c44,
-        type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.29838753
-      objectReference: {fileID: 0}
-    - target: {fileID: 4636604106043231558, guid: 71eeb09645c4376448232cbfc42d3c44,
-        type: 3}
-      propertyPath: ShapeModule.type
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4636604106043231558, guid: 71eeb09645c4376448232cbfc42d3c44,
-        type: 3}
-      propertyPath: ShapeModule.radiusThickness
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4636604106043231560, guid: 71eeb09645c4376448232cbfc42d3c44,
-        type: 3}
-      propertyPath: m_Name
-      value: Particle
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 71eeb09645c4376448232cbfc42d3c44, type: 3}
 --- !u!1 &458987545
 GameObject:
   m_ObjectHideFlags: 0
@@ -1650,7 +1557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9528302, g: 0.19326274, b: 0.19326274, a: 1}
+  m_Color: {r: 0.9528302, g: 0.19326274, b: 0.19326274, a: 0.5529412}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1823,7 +1730,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5b3ae5d75e135c04dae76be815ef366f, type: 2}
+  - {fileID: 2100000, guid: 14c58a9a51290d94f89a3382e7f1b311, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
