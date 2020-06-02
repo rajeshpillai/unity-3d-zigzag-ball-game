@@ -31,6 +31,9 @@ public class GameManager : MonoBehaviour
 
     private int direction = 1;
 
+    [HideInInspector]
+    public int gameState = 0;   // 0 - not started , 1- started 
+
 
     private void Awake()
     {
@@ -68,6 +71,8 @@ public class GameManager : MonoBehaviour
 
     void CheckLerpTimer()
     {
+        if (GameManager.instance.gameOver == true) return;
+
         timer += Time.deltaTime;
 
         if (timer > timerInterval)
@@ -117,6 +122,7 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         UIManager.instance.GameStart();
+        gameState = 1;
         ScoreManager.instance.StartScore();
         GameObject.Find("PlatformSpawner").GetComponent<PlatformSpawner>().StartSpawningPlatforms();
     }
@@ -126,5 +132,6 @@ public class GameManager : MonoBehaviour
         UIManager.instance.GameOver();
         ScoreManager.instance.StopScore();
         gameOver = true;
+        gameState = 0;
     }
 }

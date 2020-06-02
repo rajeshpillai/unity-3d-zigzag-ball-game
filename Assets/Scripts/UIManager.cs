@@ -49,6 +49,7 @@ public class UIManager : MonoBehaviour
        
         tapText.SetActive(false);
         zigzagPanel.GetComponent<Animator>().Play("panelUp");
+        GameManager.instance.gameState = 1;
     }
 
     public void GameOver() {
@@ -56,6 +57,7 @@ public class UIManager : MonoBehaviour
         highScore2.text = PlayerPrefs.GetInt("highScore").ToString();
 
         gameOverPanel.SetActive(true); // Animaion will be played automatically
+        GameManager.instance.gameState = 0;
 
     }
 }
