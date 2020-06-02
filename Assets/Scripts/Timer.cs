@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
 {
     public TextMeshProUGUI txtTimer;
 
+
     [HideInInspector]
     float timer = 0.0f;
     private void Awake()

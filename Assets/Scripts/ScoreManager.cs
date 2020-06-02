@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
+    public TextMeshProUGUI txtCurrentScore;
+
     public static ScoreManager instance;
+
     public int score;
     public int highScore;
 
@@ -33,11 +37,18 @@ public class ScoreManager : MonoBehaviour
     void IncrementScore()
     {
         score += 1;
+        ScoreChanged();
     }
 
     public void BonusPoints()
     {
         score += 5;
+        ScoreChanged();
+    }
+
+    void ScoreChanged()
+    {
+        txtCurrentScore.text = score.ToString();
     }
 
     public void StartScore()
