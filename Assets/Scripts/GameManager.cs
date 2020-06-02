@@ -122,7 +122,6 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         UIManager.instance.GameStart();
-        gameState = 1;
         ScoreManager.instance.StartScore();
         GameObject.Find("PlatformSpawner").GetComponent<PlatformSpawner>().StartSpawningPlatforms();
     }

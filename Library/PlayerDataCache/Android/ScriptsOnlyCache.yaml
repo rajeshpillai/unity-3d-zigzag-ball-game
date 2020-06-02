@@ -6,10 +6,17 @@ ScriptsOnlyBuild:
     - GameManager
     - PlatformSpawner
     - ScoreManager
+    - Timer
     - TriggerChecker
     - UIManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -48,6 +55,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
     - Class: 65
@@ -66,6 +75,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
+    - Class: 109
+      Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 11152}
     - Class: 114
@@ -77,6 +88,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11734}
     - Class: 114
+      Script: {instanceID: 11760}
+    - Class: 114
       Script: {instanceID: 11856}
     - Class: 114
       Script: {instanceID: 11944}
@@ -87,13 +100,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12194}
     - Class: 114
+      Script: {instanceID: 12342}
+    - Class: 114
+      Script: {instanceID: 12356}
+    - Class: 114
       Script: {instanceID: 12368}
     - Class: 114
+      Script: {instanceID: 12540}
+    - Class: 114
       Script: {instanceID: 12602}
+    - Class: 114
+      Script: {instanceID: 12748}
     - Class: 114
       Script: {instanceID: 12820}
     - Class: 114
       Script: {instanceID: 12952}
+    - Class: 114
+      Script: {instanceID: 13610}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -321,7 +344,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 3b2259f29e35bfb69cdaf9a68609ef79
+      Hash: 82778184a2294db2f1a3f17ccdcaf648
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ScoreManager
@@ -339,7 +362,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: 3d30d2ff79aa12268f27abd546fa3a91
+      Hash: 6a519fb032364eeaea550545aa6cc83b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -595,7 +618,13 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: afb89af9cf0604a231bb51f978769910
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Timer
   platform: 13
   scenePathNames:
   - Assets/Scenes/Level 01.unity
-  playerPath: D:/lab/unity/ZigZag-Endless-Runner-3D/apk/zigzag-ball-v0.3.apk
+  playerPath: D:/lab/unity/ZigZag-Endless-Runner-3D/apk/zigzag-ball-v0.4.apk
